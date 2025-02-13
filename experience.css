@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3ebeb;
+}
+
+header {
+    background: rgb(61, 110, 167);
+    color: rgb(128, 35, 35);
+    padding: 16px 0;
+    text-align: center;
+    width: 75%; 
+    margin: 0 auto; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+nav {
+    background: rgba(13, 13, 14, 0.8); 
+    padding: 10px 0;
+    margin: 20px auto; 
+    width: 50%; 
+    text-align: center;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; 
+    background: #444;
+    border: 2px solid #555;
+    border-radius: 12px; 
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+    background: #555;
+    color: #fff;
+    border: 2px solid #666;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(90, 87, 87);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-container h2 {
+    text-align: center;
+    color: #0a0a0a;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #fafafa;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h3 {
+    margin: 0;
+    color: #444;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.experience-item .date {
+    color: #888;
+    font-size: 0.9em;
+}
+
+.experience-item .details {
+    max-width: 70%;
+}
+
+.experience-item .logo {
+    max-width: 20%;
+    text-align: center;
+}
+
+.experience-item .logo img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: grey;
+    color: black;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 16px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+   
+    nav ul {
+        flex-direction: column;
+    }
+}
+nav {
+    width: 75%; 
+}

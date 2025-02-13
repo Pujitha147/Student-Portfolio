@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.skills-container {
+    padding: 32px;
+    margin: 32px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-container h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #333;
+}
+
+.skill-item {
+    margin-bottom: 24px;
+}
+
+.skill-item h3 {
+    margin: 0;
+    color: #444;
+}
+
+.skill-level {
+    background: #ddd;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 8px;
+}
+
+.skill-level::before {
+    content: attr(data-level);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+}
+
+.skill-level[data-level="90%"] {
+    background: linear-gradient(to right, #4caf50 90%, #ddd 10%);
+}
+
+.skill-level[data-level="85%"] {
+    background: linear-gradient(to right, #2196f3 85%, #ddd 15%);
+}
+
+.skill-level[data-level="75%"] {
+    background: linear-gradient(to right, #ff9800 75%, #ddd 25%);
+}
+
+.skill-level[data-level="80%"] {
+    background: linear-gradient(to right, #9c27b0 80%, #ddd 20%);
+}
+
+.skill-level[data-level="70%"] {
+    background: linear-gradient(to right, #f44336 70%, #ddd 30%);
+}
+
+.skill-level[data-level="65%"] {
+    background: linear-gradient(to right, #795548 65%, #ddd 35%);
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 16px;
+    }
+
+    .skill-item {
+        padding: 12px;
+    }
+}
+nav {
+    background: rgba(13, 13, 14, 0.8); 
+    padding: 10px 0;
+    margin: 20px auto; 
+    width: 50%; 
+    text-align: center;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; 
+    background: #444;
+    border: 2px solid #555;
+    border-radius: 12px; 
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+    background: #555;
+    color: #fff;
+    border: 2px solid #666;
+}
+

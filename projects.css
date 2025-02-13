@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9dddd;
+}
+
+header {
+    background: #333;
+    color: rgb(102, 196, 122);
+    padding: 16px 0;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background: rgba(13, 13, 14, 0.8); 
+    padding: 10px 0;
+    margin: 20px auto; 
+    width: 50%; 
+    text-align: center;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; 
+    background: #444;
+    border: 2px solid #555;
+    border-radius: 12px; 
+    transition: background 0.3s, color 0.3s, border 0.3s;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+nav ul li a:hover {
+    background: #555;
+    color: #fff;
+    border: 2px solid #666;
+}
+
+.projects-container {
+    padding: 32px;
+    margin: 32px auto;
+    max-width: 900px;
+    background: rgb(121, 114, 114);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-container h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #141313;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    margin: 0;
+    color: #444;
+}
+
+.project-item p {
+    color: #666;
+}
+
+.project-item .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.project-item .tech-stack span {
+    background: #ddd;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+
+
